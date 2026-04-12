@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ImgInHance
 // @namespace    lucdesign.at
-// @version      1.1.1
+// @version      1.1.2
 // @description  Inline image enhancement via auto-levels — applies canvas-based histogram correction to all images on a page whose histogram is suboptimal. Toggle via floating button.
 // @author       lucdesign
 // @match        *://*/*
