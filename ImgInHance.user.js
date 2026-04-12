@@ -26,7 +26,7 @@
 
   function isCrossOrigin(img) {
     const src = img.src;
-    if (!src || src.startsWith('data:') || src.startsWith('blob:')) return false;
+    if (!src) return false;
     try { return new URL(src).origin !== window.location.origin; }
     catch (e) { return false; }
   }
@@ -114,8 +114,6 @@
       data[pointer]   = lut[256 + data[pointer--]]; // ch1
       data[pointer]   = lut[       data[pointer]];  // ch0
     }
-
-    return imageData;
   }
 
   // ─── CANVAS PROCESSING ────────────────────────────────────────────────────────
